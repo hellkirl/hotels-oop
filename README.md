@@ -2,7 +2,7 @@
 
 ## ERD диаграмма
 
-![erd](./erd.jpeg)
+![img.png](erd.png)
 
 ## Общий pipeline сервиса
 
