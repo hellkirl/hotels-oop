@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <ProjectReference Include="..\hotels.Application.Abstractions\hotels.Application.Abstractions.csproj"/>
+        <ProjectReference Include="..\hotels.Application.Models\hotels.Application.Models.csproj"/>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <PackageReference Include="MediatR"/>
+    </ItemGroup>
+
+</Project>

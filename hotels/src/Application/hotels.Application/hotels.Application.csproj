@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Infrastructure\hotels.Infrastructure.Persistence\hotels.Infrastructure.Persistence.csproj"/>
+        <ProjectReference Include="..\hotels.Application.Abstractions\hotels.Application.Abstractions.csproj"/>
+        <ProjectReference Include="..\hotels.Application.Contracts\hotels.Application.Contracts.csproj"/>
+        <ProjectReference Include="..\hotels.Application.Models\hotels.Application.Models.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MediatR"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions"/>
+    </ItemGroup>
+
+
+</Project>

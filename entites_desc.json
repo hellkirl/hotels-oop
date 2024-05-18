@@ -1,0 +1,66 @@
+{
+  "user": {
+    "user_id": "integer",
+    "user_info": {
+      "user_info_id": "integer",
+      "user_id": "integer",
+      "first_name": "string",
+      "last_name": "string",
+      "email": "string",
+      "phone": "string",
+      "passport": "string",
+      "birthday": "string (date format: DD.MM.YYYY)"
+    },
+    "password_hash": "string"
+  },
+  "hotel_chain": {
+    "hotel_chain_id": "integer",
+    "name": "string",
+    "hotel_number": "integer",
+    "hotel_chain_manager": "string"
+  },
+  "hotel": {
+    "hotel_id": "integer",
+    "hotel_chain_id": "integer",
+    "location_id": "integer",
+    "name": "string",
+    "stars": "string",
+    "hotel_manager": "string",
+    "phone": "string",
+    "catering": [
+      "string"
+    ]
+  },
+  "hotel_suites": [
+    {
+      "suit_id": "integer",
+      "hotel_id": "integer",
+      "name": "string",
+      "base_price": "number",
+      "n_suits": "integer",
+      "description": "string",
+      "max_occupancy": "integer"
+    }
+  ],
+  "location": {
+    "location_id": "integer",
+    "country": "string",
+    "city": "string",
+    "street": "string",
+    "building_number": "string",
+    "index": "string"
+  },
+  "reservation": {
+    "reservation_id": "integer",
+    "hotel_id": "integer",
+    "user_id": "integer",
+    "suit_id": "integer",
+    "date_in": "string (date format: YYYY-MM-DDTHH:MM:SS.SSSZ)",
+    "date_out": "string (date format: YYYY-MM-DDTHH:MM:SS.SSSZ)",
+    "catering": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ]
+  }
+}
